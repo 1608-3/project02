@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/font.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+    <!--头部-->
+    <div id="header"></div>
+
+    <!--主体-->
+    <div id="main">
+        <div class="container">
+            <div class="bg">
+                <img src="images/011.jpg" id="pic" alt=""/>
+            </div>
+            <!--  登录页面  -->
+            <div class="modal">
+                <h4>用户登录</h4>
+                <p class="alert"></p>
+                <form id="login-form">
+                    <input type="text" placeholder="请输入登录用户名" name="uname" value="" autofocus>
+                    <input type="password" placeholder="请输入登录密码" name="upwd" value="">
+                    <input type="button" value="登录" id="bt-login">
+                </form>
+                <p>还没有账号？<b class='bt-register'>注册账号</b></p>
+            </div>
+        </div>
+    </div>
+
+    <!--尾部-->
+    <div id="footer"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

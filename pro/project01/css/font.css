@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+#top div span:before{
+	content:"\e171";
+}
+
+.b1:before{
+	content:'\e108';
+}
+.b2:before{
+	content:'\e219';
+}
+.b3:before{
+	content:'\e109';
+}
+.b4:before{
+	content:'\e116';
+}

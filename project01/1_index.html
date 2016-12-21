@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+	<head>
+		<title>旅行</title>
+		<meta charset="utf-8">  
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/banner.css" />
+		<link rel="stylesheet" href="css/font.css" />
+		<link rel="stylesheet" href="laydate/skins/default/laydate.css">
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div id="header"></div>
+
+		<!--  广告 -->
+		<div id="banner">
+			<div id="sear">
+				<div class="searc act" id="q1">
+					<p>
+						<a href="#">景点</a>
+						<a href="#">景点+酒店</a>
+						<a href="#">周边游</a>
+					</p>
+					<form>
+						<input name="search"/>
+						<p><input type="submit" value="搜索"/></p>
+					</form>
+					<ul class="ss">
+						<li><a href="#">水上世界</a></li>
+						<li><a href="#">主题乐园</a></li>
+						<li><a href="#">自然风光</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">广州</a></li>
+						<li><a href="#">深圳</a></li>
+						<li><a href="#">珠海</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">香港</a></li>
+						<li><a href="#">澳门</a></li>
+						<li><a href="#">台湾</a></li>
+					</ul>
+				</div>
+				<div class="searc" id="q2">
+					<p>
+						<a href="#">入住时间：</a><br>
+						<input type="text" class="laydate-icon" id="date">
+					</p>
+					<p>
+						<a href="#">离店时间：</a><br>
+						<input type="text" class="laydate-icon" id="date1"><br>
+						<button>查询</button>
+					</p>
+					<span>酒店</span>
+					<ul>
+						<li><a href="#">七星级</a></li>
+						<li><a href="#">五星级</a></li>
+						<li><a href="#">超级豪华版</a></li>
+					</ul>
+				</div>
+				<div class="searc" id="q3">
+					<p>
+						<a href="#">启程时间：</a><br>
+						<input type="text" class="laydate-icon" id="date2">
+					</p>
+					<p>
+						<a href="#">返程时间：</a><br>
+						<input type="text" class="laydate-icon" id="date3"><br>
+						<button>查询</button>
+					</p>
+					<span>机票</span>
+					<ul>
+						<li><a href="#">特价机票</a></li>
+						<li><a href="#">经济舱</a></li>
+						<li><a href="#">超级豪华版</a></li>
+					</ul>
+				</div>
+				<ul class="sear">
+				<li class="act bk"><a href="#q1" data-toggle="item">景点</a></li>
+				<li><a href="#q2" data-toggle="item">酒店</a></li>
+				<li><a href="#q3" data-toggle="item">机票</a></li>
+			</ul>
+			</div>
+			<div id="slider">	
+			</div>
+			<div id="scene">
+				<h2><a href="#">目的地</a></h2>
+				<ul class="subtitle">
+					<li class="active"><a href="1">东北</a></li>
+					<li><a href="2">西北</a></li>
+					<li><a href="3">内蒙古</a></li>
+					<li><a href="4">杭州上海</a></li>
+				</ul>
+				<div id="Scene">
+					<div id="change">
+						<a href="#">
+							<img src="images/1.jpg">
+							<figcaption>
+								<h3>松花湖两日游<i>160</i></h3>
+								<p>松花湖位于吉林省吉林市，夏天可以划船，冬天可以溜冰</p>
+							</figcaption>
+						</a>
+					</div>
+					<div id="change">
+						<a href="#">
+							<img src="images/2.jpg">
+							<figcaption>
+								<h3>哈尔滨两日游<i>240</i></h3>
+								<p>哈尔滨中央大街+哈尔滨教堂+松花江乘船+太阳岛</p>
+							</figcaption>
+						</a>
+					</div>
+					<div id="change">
+						<a href="#">
+							<img src="images/3.jpg">
+							<figcaption>
+								<h3>观雾凇<i>198</i></h3>
+								<p>雾凇，过冷雾滴直接冻结在物体上的乳白色冰晶沉积物，是非常难得的自然奇观</p>
+							</figcaption>
+						</a>
+					</div>
+					<div id="change">
+						<a href="#">
+							<img src="images/4.jpg">
+							<figcaption>
+								<h3>南楼山一日游<i>200</i></h3>
+								<p>南楼山位于吉林省吉林市，这里的秋景特别迷人，森林的树叶有绿的、黄的、红的</p>
+							</figcaption>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 主体  -->
+		<div id="main">
+			<div id="travelNotes">
+			<h2><a href="#">游记</a></h2>
+			<div>
+			  <ul id="tNotes"></ul>
+			</div>
+			</div>
+			<div id="trip">
+				<h2><a href="#">自驾游</a></h2>
+				<div id='Trip'></div>
+			</div>
+				<div id="overseas">
+					<h2><a href="#">境外游</a></h2>
+					<div>
+						<ul class="overbound"></ul>			
+					</div>
+				</div>
+			<!--foot-->
+			<div id="foot">
+				<div class="container">
+					<div id="b1">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- 返回顶部  -->
+		<div id="toTop" class="in">
+		</div>
+
+		<!--   插入广告  -->
+		<div id="insert" style="display: none;">
+			<div></div>
+			<p>
+				<span>达内一日游</span><i>免费</i><br>
+				<a href="#">立即查看</a>
+				<b class="close close_1">X</b>
+			</p>
+		</div>
+
+
+		<!--  尾部  -->
+		<div id="footer"></div>
+
+		<!-- 	js	 -->
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<script src="laydate/laydate.js"></script>
+	</body>
+</html>
