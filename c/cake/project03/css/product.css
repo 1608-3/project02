@@ -1,0 +1,86 @@
+.main-top {
+  margin-top: 70px;
+}
+.main-m {
+  margin: 50px 0;
+}
+.main-m .plist > li {
+  padding: 0;
+  margin-left: -3px;
+}
+.main-m .plist img {
+  transition: all 1s linear;
+}
+.main-m .plist .shadow:hover img {
+  transform: scale(1.08);
+}
+.main-m .plist .shadow {
+  position: relative;
+  display: inline-block;
+}
+.main-m .plist .shadow:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 transparent;
+}
+.main-m .plist .shadow:hover:after {
+  box-shadow: 0 0 20px 20px #aaa;
+  transform: scale(1.3);
+  transition: all 1s linear;
+  opacity: 0;
+}
+.main-m .sch {
+  width: 50%;
+  margin-left: 20px;
+  padding-left: 30px;
+}
+.main-m input.search {
+  padding-left: 5%;
+}
+.main-m span.sear {
+  top: 0;
+  left: 5%;
+}
+.main-m .info-inner {
+  width: 188px;
+  color: #023a6d;
+  background-color: #FFFFFF;
+  border: 3px solid #023a6d;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.main-m .info-in {
+  border: 1px solid #000000;
+}
+.main-m .info-in ul {
+  padding: 7px;
+}
+.main-m .info-in ul .info-line {
+  border-bottom: 1px solid #023a6d;
+}
+.main-m .info-in ul p span.active {
+  background-color: #023a6d;
+  color: white;
+}
+.main-m .info-in ul .span-sel {
+  border: 1px solid #023a6d;
+  padding: 2px 3px;
+  border-radius: 3px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.main-m button.more,
+.main-m p.noMore {
+  width: 600px;
+  margin: 50px auto 0;
+  display: block;
+}
+.main-m p.noMore {
+  background: #ddd;
+  padding: 5px;
+  font-size: 16px;
+}

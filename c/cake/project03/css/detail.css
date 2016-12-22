@@ -1,0 +1,278 @@
+body {
+  background: #E9E8E3;
+}
+/***main****/
+.detail .container {
+  background: #fff;
+  padding: 30px;
+}
+.detail .container .row {
+  margin-left: 0;
+}
+.de_info_1 {
+  width: 1040px;
+  border-top: 4px solid #000000;
+}
+.de_info_1 .de_info_main {
+  margin: 5px;
+  border-top: 1px solid #000;
+}
+.de_info_1 .de_info_main .de_info_left {
+  width: 639px;
+  float: left;
+}
+.de_info_1 .de_info_main .de_info_left .b_pic {
+  border: 2px solid #000000;
+  margin-top: 9px;
+  margin-right: 9px;
+  width: 627px;
+  position: relative;
+  z-index: 10;
+  height: 444px;
+}
+.de_info_1 .de_info_main .de_info_left .b_pic img {
+  width: 623px;
+  height: 440px;
+}
+.de_info_1 .de_info_main .de_info_left .b_pic .superMask {
+  position: absolute;
+  width: 623px;
+  height: 440px;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  cursor: move;
+}
+.de_info_1 .de_info_main .de_info_left .b_pic .mask {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background: #ffa;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.de_info_1 .de_info_main .de_info_left .b_pic .l-pic {
+  border: 1px solid #000;
+  width: 390px;
+  height: 388px;
+  background: url("../images/detail/公爵提拉米苏-1.jpg");
+  position: absolute;
+  z-index: 10;
+  right: -404px;
+  top: 55px;
+  display: none;
+}
+.de_info_1 .de_info_main .de_info_left .s_pic {
+  width: 639px;
+  border-bottom: 1px solid #000000;
+  margin-top: 10px;
+}
+.de_info_1 .de_info_main .de_info_left .s_pic img {
+  border: 2px solid #000;
+  width: 123px;
+  height: 88px;
+}
+.de_info_1 .de_info_main .de_info_left .de_info_txt {
+  padding: 20px;
+  color: #333;
+  line-height: 20px;
+  text-align: left;
+}
+.de_info_1 .de_info_main .de_info_right {
+  width: 390px;
+  float: left;
+  text-align: left;
+  border-left: 1px solid #000000;
+  position: relative;
+}
+.de_info_1 .de_info_main .de_info_right p {
+  padding: 0;
+}
+.de_info_1 .de_info_main .de_info_right span,
+.de_info_1 .de_info_main .de_info_right b {
+  font-size: 12px;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li {
+  border-bottom: 1px solid #000000;
+  padding: 18px 0 12px 20px;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li span.milk {
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li ul.pound > li {
+  border: 1px solid #000;
+  margin-right: 5px;
+  text-align: center;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li ul.pound > li a {
+  display: inline-block;
+  padding: 5px 12px;
+  color: #333;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li ul.pound > li.active {
+  background: #000;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li ul.pound > li.active a {
+  color: #fff;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li p.info_num {
+  line-height: 28px;
+  border: 2px solid #000000;
+  margin-top: 15px;
+  display: inline-block;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li p.info_num input {
+  width: 40px;
+  height: 28px;
+  margin: -3px;
+  border-right: 1px solid #000000;
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid #000000;
+  text-align: center;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li p.info_num span.redu,
+.de_info_1 .de_info_main .de_info_right ul.de_info > li p.info_num span.add {
+  display: inline-block;
+  width: 28px;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li ul.buy {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info > li ul.buy a {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 18px;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info li.info_tab {
+  border-bottom: 0;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info li.info_tab ul {
+  padding-right: 20px;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info li.info_tab li.des {
+  border-bottom: 1px solid #000;
+  line-height: 10px;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info li.info_tab li {
+  border-bottom: 1px dotted #727272;
+  padding: 0 3px;
+  line-height: 25px;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info li.info_tab li b {
+  display: inline-block;
+  width: 65px;
+  text-align: right;
+  padding-right: 15px;
+  font-weight: bold;
+  vertical-align: top;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info li.info_tab li span {
+  display: inline-block;
+  width: 258px;
+}
+.de_info_1 .de_info_main .de_info_right ul.de_info li.info_tab li.info_d {
+  margin-top: 5px;
+}
+.de_info_1 .de_info_main .de_info_right .review {
+  position: absolute;
+  z-index: 1;
+  bottom: 17px;
+  left: 8px;
+  min-height: 100px;
+  width: 96%;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 5px;
+  display: none;
+}
+.de_info_1 .de_info_main .de_info_right .de_info_rev {
+  display: block;
+  width: 370px;
+  background: #fff;
+  position: relative;
+  bottom: 0;
+  left: 10px;
+  box-shadow: 0 0 3px 1px #ccc;
+}
+.de_info_2 {
+  width: 1040px;
+  border-top: 4px solid #000000;
+  margin-top: 10px;
+}
+.de_info_2 .de_info_main {
+  margin: 5px;
+  border-top: 1px solid #000;
+}
+#de_info_3 {
+  background: #f1f1f1;
+  width: 1030px;
+  padding: 0 30px;
+  margin-left: 5px;
+}
+#de_info_3 h1 {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+}
+#de_info_3 p {
+  font-size: 12px;
+  color: #333;
+  line-height: 30px;
+  padding-left: 10px;
+}
+#de_info_3 span {
+  padding: 5px 10px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+.de_title {
+  border-top: 4px solid #000000;
+  margin-top: 10px;
+  width: 1040px;
+  border-bottom: 1px solid #000000;
+  line-height: 78px;
+}
+.de_title .de_info_main {
+  margin: 5px;
+  border-top: 1px solid #000;
+}
+.de_sale {
+  width: 1040px;
+  border-top: 4px solid #000000;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.de_sale li {
+  padding: 0;
+}
+.de_sale img {
+  border: 2px solid #000;
+}
+.de_sale p {
+  color: #333;
+  line-height: 40px;
+  font-weight: bold;
+}
+.de_sale p span {
+  font-size: 16px;
+}
+.de_sale p span.s1 {
+  font-size: 12px;
+}

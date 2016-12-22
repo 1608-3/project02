@@ -1,0 +1,49 @@
+<!--头部-->
+<div ng-include="'tpl/include/header.html'"></div>
+<div class="main">
+    <div class="text-center">
+        <img src="images/login/login_img_3.jpg" alt="" class="img-responsive"/>
+    </div>
+    <!--登录框-->
+    <div class="login media">
+        <div class="media-left">
+            <img src="images/login/login_pic.png" alt="" class="img-responsive"/>
+        </div>
+        <div class="login-box media-body">
+            <h4>用户注册</h4>
+            <form action="" name="myForm">
+                <div class="has-feedback">
+                    <span class="form-control-feedback glyphicon glyphicon-user"></span>
+                    <input type="text" class="uname" placeholder="请填写您的账号" ng-model="nuser.uname" ng-blur="blur()"/>
+                    <span class="feedback" ng-show="isRight"><img src="images/login/user_phone.jpg" alt=""/></span>
+                    <span ng-hide="isExist" class="feedback">该用户名已存在</span>
+                </div>
+                <div class="has-feedback">
+                    <span class="form-control-feedback glyphicon glyphicon-lock"></span>
+                    <input type="password" class="upwd" placeholder="请填写密码(六位以上)" ng-model="nuser.upwd" ng-blur="Little()"/>
+                    <span class="feedback" ng-hide="isLittle">密码必须六位以上</span>
+                </div>
+                <div class="has-feedback">
+                    <span class="form-control-feedback glyphicon glyphicon-lock"></span>
+                    <input type="password" class="upwd1" placeholder="请再次填写密码" ng-model="nuser.upwd1" ng-blur="Cupwd()"/>
+                    <span ng-hide="isCupwd" class="feedback">输入密码不一致</span>
+                </div>
+                <div class="has-feedback">
+                    <span class="form-control-feedback glyphicon glyphicon-envelope"></span>
+                    <input type="email" class="email" placeholder="请输入你的邮箱" name="email" ng-model="nuser.email"/>
+                    <span style="color:red" ng-show="myForm.email.$invalid"></span>
+                    <span ng-show="myForm.email.$error.email" class="feedback">邮箱格式不对</span>
+                </div>
+                <input type="button" class="btn btn-default" value="提交信息" ng-click="register()"/>
+                <p class="to_log">已经有账号？<a href="#/login">登录</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <img src="images/login/login_img_4.jpg" alt="" class="img-responsive"/>
+    </div>
+</div>
+
+<!--尾部-->
+<div ng-include="'tpl/include/footer.html'"></div>

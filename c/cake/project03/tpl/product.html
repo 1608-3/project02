@@ -1,0 +1,59 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+<!--主体-->
+<div class="main">
+    <div class="container">
+        <div class="main-top text-center">
+            <img src="images/product/title.png" alt=""/>
+        </div>
+        <!--product-->
+        <div class="main-m">
+            <div class="form-group has-feedback sch">
+                <input type="text" class="form-control search" placeholder="按名字搜索" ng-model="kw" ng-focus="search()"/>
+                <span class="form-control-feedback glyphicon glyphicon-search sear"></span>
+                <span class="feedback" ng-hide="isHas">没有该蛋糕</span>
+            </div>
+            <div>
+                <ul class="list-unstyled list-inline plist">
+                    <li class="text-center" ng-repeat="p in productList">
+                        <figure class="effect">
+                            <a href="#/detail/{{p.pid}}" class="shadow">
+                                <img ng-src="images/product/{{p.img_md1}}">
+                            </a>
+                        </figure>
+                        <div class="info-inner">
+                            <div class="info-in">
+                                <ul class="list-unstyled">
+                                    <li class="info-line">
+                                        <a href="#/detail/{{p.pid}}">
+                                            <p class="p1">{{p.ename}}</p>
+                                            <p class="p2">{{p.name}}</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <p class="p3">{{p.price | currency:'￥'}}/1.2磅</p>
+                                        <p class="weight">
+                                            <a href><span class="span-sel active">1.2磅</span></a>
+                                            <a href><span class="span-sel">2.2磅</span></a>
+                                            <a href><span class="span-sel">3.2磅</span></a>
+                                            <a href><span class="span-sel">6.0磅</span></a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <button class="btn btn-success more" ng-click="loadMore()" ng-show="hasMore">加载更多</button>
+            <p ng-hide="hasMore" class="noMore text-center">没有更多数据可以加载了</p>
+        </div>
+
+        <div class="main-foot text-center">
+            <img src="images/product/middle.png" alt=""/>
+        </div>
+    </div>
+</div>
+
+<div ng-include="'tpl/include/footer.html'"></div>

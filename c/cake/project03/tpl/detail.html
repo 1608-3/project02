@@ -1,0 +1,189 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+<!--主体-->
+<div class="main detail">
+    <div class="top_p">
+        <a href><img src="images/detail/pic.png" alt="" class="img-responsive"/></a>
+    </div>
+    <div class="container">
+        <!--de_info_1-->
+        <section class="de_info_1 row">
+            <div class="de_info_main">
+                <!--左侧-->
+                <div class="de_info_left">
+                    <div class="b_pic">
+                        <a href>
+                            <img ng-src="images/detail/{{proList.img_sm1}}" alt=""/>
+                        </a>
+                        <div class="mask"></div>
+                        <div class="superMask"></div>
+                        <div class="l-pic"></div>
+                    </div>
+                    <div class="s_pic">
+                        <ul class="list-unstyled list-inline text-center">
+                            <li>
+                                <img ng-src="images/detail/{{proList.img_sm1}}" alt=""/>
+                            </li>
+                            <li>
+                                <img ng-src="images/detail/{{proList.img_sm2}}" alt=""/>
+                            </li>
+                            <li>
+                                <img ng-src="images/detail/{{proList.img_sm3}}" alt=""/>
+                            </li>
+                            <li>
+                                <img ng-src="images/detail/{{proList.img_sm4}}" alt=""/>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="de_info_txt">
+                        <p>{{proList.detail}}</p>
+                    </div>
+                </div>
+                <!--右侧-->
+                <div class="de_info_right">
+                    <ul class="list-unstyled de_info">
+                        <li>
+                            <p><span class="milk">{{proList.ename}}</span>{{proList.name}}</p>
+                        </li>
+                        <li>
+                            <p>
+                                单价:<span class="milk">{{proList.price}}</span>.00
+                            </p>
+                        </li>
+                        <li>
+                            <ul class="list-unstyled list-inline pound">
+                                <li class="active"><a href>1.2磅</a></li>
+                                <li><a href>2.2磅</a></li>
+                                <li><a href>3.2磅</a></li>
+                                <li><a href>6.0磅</a></li>
+                            </ul>
+                            <!--购买数量-->
+                            <p class="info_num">
+                                <span class="redu" ng-click="countRedu()">-</span>
+                                <input type="text " ng-model="count"/>
+                                <span class="add" ng-click="countAdd()">+</span>
+                            </p>
+                            <ul class="list-unstyled list-inline buy">
+                                <li><a href ng-click="toBuy()">立即购买</a></li>
+                                <li><a href ng-click="cartAdd()">加入购物车</a></li>
+                                <!---->
+                            </ul>
+                            <p>
+                                <span><b>注意：</b>此款蛋糕至少需提前一天预订。上海外环以外配送范围需要次日送达的，必须在当日15:00之前下单。</span>
+                            </p>
+                        </li>
+                        <!--商品详情-->
+                        <li class="info_tab">
+                            <ul class="list-unstyled">
+                                <li class="des">
+                                    <p><span><b>商品详情</b></span></p>
+                                    <p><span><b>DESCRIPTION</b></span></p>
+                                </li>
+                                <!--<li>-->
+                                    <!--<b>甜度</b><img src="images/detail/sweet.png" alt=""/>-->
+                                <!--</li>-->
+                                <li class="info_d">
+                                    <b>口味</b>
+                                    <span>{{proList.taste}}</span>
+                                </li>
+                                <li>
+                                    <b>主要原料</b>
+                                    <span>{{proList.material}}</span>
+                                </li>
+                                <li>
+                                    <b>包装清单</b>
+                                    <span>5份餐盘、5把叉子、1把切刀</span>
+                                </li>
+                                <li>
+                                    <b>贮存条件</b>
+                                    <span>最适宜0℃~8℃冷藏保存，离开冷藏请勿超过2小时。5月1日~10月31日建议2天内食用 11月1日~翌年4月30日建议3天内食用。</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="review">
+                        <span>{{proList.name}}:</span>
+                        <p>{{proList.taste}}口味的，{{proList.detail}}</p>
+                    </div>
+                    <div class="text-center">
+                        <a href class="de_info_rev" ng-click="review()">
+                            <span>评论(253)</span>
+                            <img src="images/detail/arrow.gif" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--de_info_2-->
+        <section class="de_info_2 row">
+            <div class="de_info_main">
+                <div>
+                    <img src="images/detail/{{proList.img_long}}" alt=""/>
+                </div>
+                <div>
+                    <img src="images/detail/size.jpg" alt=""/>
+                </div>
+            </div>
+        </section>
+        <!--addr-->
+        <section class="de_info_3 row" id="de_info_3">
+            <h1>配送区域</h1>
+            <p><span>上海</span>上海外环以内区域及嘉定行政区、闵行区行政区（不含黄浦江以东区域）免费配送。上海其他区域需加收30元运费，配送时间请致电客服。</p>
+            <p><span>苏州</span>周湖线周山大道以北，G15W（常台高速）同津大道以西，浦庄大道以东免费配送。苏州绕城以内除阳澄湖地区（G15W以东，G2京沪高速以北）暂不支持配送。</p>
+            <p><span>杭州</span>绕城范围以内及淘宝城免费配送。绕城以外（除淘宝城）暂不支持配送。</p>
+            <p><span>宁波</span>绕城高速以内免费配送。绕城高速以外暂不支持配送。</p>
+            <p><span>无锡</span>S19锡张高速（通锡高速）以北，锡玉路（堰玉西路）以南，京沪铁路以西，蠡湖大道（环湖路，西环路、锡西大道）以东免费配送。其他地区暂不支持配送。</p>
+            <p><span>南京</span>绕城高速，沪蓉高速以北，长江以南、以东，长深高速以西，南京市长江以东免费配送。其他地区暂不支持配送。</p>
+            <p><span>北京</span>五环以内（含五环）免费配送。其他地区暂不支持配送。</p>
+            <p><span>绍兴</span>绍诸高速以北，钱陶公路以南，平陶公路以西。轻纺城大道，杨绍线，福漓公路，分后线以东。其余地区暂不支持配送。</p>
+            <p><span>重庆</span>金州大道以南、嘉陵江渝黔铁路以东、轨道交通三号线内环快 速路以北以西免费配送，其他区域暂不支持配送。</p>
+            <p><span>成都</span>牧华路以北，梓州大道以西，成都双流机场西航港大道以东及成都绕城高速内免费配送，其他区域暂不支持配送。</p>
+        </section>
+        <!--de_title-->
+        <section class="de_title row">
+            <div class="text-center de_info_main">
+                <img src="images/detail/title.png" alt=""/>
+            </div>
+        </section>
+        <section class="de_sale row">
+            <ul class="list-unstyled list-inline text-center">
+                <li class="">
+                    <a href>
+                        <img src="images/detail/detail_1.png" alt=""/>
+                    </a>
+                    <p>
+                        <a href>
+                            <span>Cheese Polar Milk</span>
+                            <span class="s1">极地牛乳</span>
+                        </a>
+                    </p>
+                </li>
+                <li class="">
+                    <a href>
+                        <img src="images/detail/detail_2.jpg" alt=""/>
+                    </a>
+                    <p>
+                        <a href>
+                            <span>Cheese Polar Milk</span>
+                            <span class="s1">极地牛乳</span>
+                        </a>
+                    </p>
+                </li>
+                <li class="">
+                    <a href>
+                        <img src="images/detail/detail_3.png" alt=""/>
+                    </a>
+                    <p>
+                        <a href>
+                            <span>Cheese Polar Milk</span>
+                            <span class="s1">极地牛乳</span>
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<div ng-include="'tpl/include/footer.html'"></div>

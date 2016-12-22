@@ -1,0 +1,214 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+<!--主体-->
+<div class="c-main">
+    <div class="container">
+        <div class="c-top cmn">
+            <ul class="list-inline list-unstyled">
+                <li class="active"><span>1</span><i>CART</i><b>购物车</b></li>
+                <li><span>2</span><i>FILL IN ORDER</i><b>确认订单</b></li>
+                <li><span>3</span><i>SUCCESSFUL SUBMISSION</i><b>成功提交订单</b></li>
+            </ul>
+        </div>
+        <section class="cart-main">
+            <h4>我的购物车</h4>
+            <div class="cart-tb">
+                <div class="cart-nav">
+                    <ul class="list-unstyled list-inline text-center">
+                        <li>商品</li>
+                        <li>单价</li>
+                        <li>数量</li>
+                        <li>金额</li>
+                        <li>操作</li>
+                    </ul>
+                </div>
+                <div class="cart-det" ng-show="hasPro">
+                    <ul class="list-unstyled list-inline text-center" ng-repeat="cList in cartList">
+                        <li>
+                            <a href="#/detail/{{cList.pid}}" class="cart-img">
+                                <img ng-src="images/detail/{{cList.img_sm1}}" alt=""/>
+                            </a>
+                            <a href="#/detail/{{cList.pid}}">
+                                <span>{{cList.ename}}</span>
+                                <span>{{cList.name}}</span>
+                            </a>
+                        </li>
+                        <li>
+                            <b><span>{{cList.price | currency:'￥'}}</span></b>
+                        </li>
+                        <li>
+                            <b class="c-count">{{cList.count}}</b>
+                        </li>
+                        <li>
+                            <b>&yen;<span>{{cList.price*cList.count}}</span></b>
+                        </li>
+                        <li>
+                            <a href ng-click="del(cList.pid)">
+                                <img src="images/cart/bsk_address_close.png" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart-list text-center" ng-hide="hasPro">
+                    <p>暂无商品，赶紧去浏览商品吧~<a href="#/product">去看看</a></p>
+                </div>
+                <!-- <div class="cart-count">
+                    <ul class="list-inline list-unstyled">
+                        <li>
+                            <a href>
+                                <img src="images/cart/icon_1.png" alt=""/>
+                                添加蜡烛
+                            </a>
+                        </li>
+                        <li>
+                            <a href>
+                                <img src="images/cart/icon_2.png" alt=""/>
+                                添加餐具
+                            </a>
+                        </li>
+                        <li>
+                            <a href class="c-delete">
+                                <img src="images/cart/icon_cart_dustbin.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            共添加<span class="c-count">0</span>件商品
+                        </li>
+                
+                    </ul>
+                </div> -->
+                <div class="cart-total">
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>商品总计</span>
+                            <span><b>{{sum | currency:'￥'}}</b></span>
+                        </li>
+                        <li>
+                            <span>优惠</span>
+                            <span>&yen;<b>0.00</b></span>
+                        </li>
+                        <li>
+                            <span>配送费</span>
+                            <span>&yen;<b>0.00</b></span>
+                        </li>
+                        <li>
+                            <span>您实际需要支付</span>
+                            <span><b>{{sum|currency:''}}</b></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="c-ord">
+                    <a href="#/product" class="go-buy">继续购物</a>
+                    <a href="#/order/{{cartList.pid}}" class="pay">下单结算</a>
+                </div>
+                <div class="cart-other">
+                    <h3>热销新品推荐</h3>
+                    <ul class="list-unstyled list-inline ot-list">
+                        <li>
+                            <dl>
+                                <dt>
+                                    <a href>
+                                        <img src="images/cart/sku_1.png" alt=""/>
+                                    </a>
+                                </dt>
+                                <dd>
+                                    <p>
+                                        <a href>[极致系列]极致泡芙（巧克力）</a>
+                                    </p>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="text-right">
+                                            <p>&yen;<span>88.0</span>盒</p>
+                                            <p>0.8磅</p>
+                                        </li>
+                                        <li class="right">
+                                            <a href class="add-cart">
+                                                加入购物车
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <a href>
+                                        <img src="images/cart/sku_2.png" alt=""/>
+                                    </a>
+                                </dt>
+                                <dd>
+                                    <p>
+                                        <a href>[极致系列]极致泡芙（巧克力）</a>
+                                    </p>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="text-right">
+                                            <p>&yen;<span>88.0</span>盒</p>
+                                            <p>0.8磅</p>
+                                        </li>
+                                        <li class="right">
+                                            <a href class="add-cart">
+                                                加入购物车
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <a href>
+                                        <img src="images/cart/sku_3_dzx.png" alt=""/>
+                                    </a>
+                                </dt>
+                                <dd>
+                                    <p>
+                                        <a href>[极致系列]极致泡芙（巧克力）</a>
+                                    </p>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="text-right">
+                                            <p>&yen;<span>88.0</span>盒</p>
+                                            <p>0.8磅</p>
+                                        </li>
+                                        <li class="right">
+                                            <a href class="add-cart">
+                                                加入购物车
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <a href>
+                                        <img src="images/cart/sku_4_dzx.png" alt=""/>
+                                    </a>
+                                </dt>
+                                <dd>
+                                    <p>
+                                        <a href>[极致系列]极致泡芙（巧克力）</a>
+                                    </p>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="text-right">
+                                            <p>&yen;<span>88.0</span>盒</p>
+                                            <p>0.8磅</p>
+                                        </li>
+                                        <li class="right">
+                                            <a href class="add-cart">
+                                                加入购物车
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div ng-include="'tpl/include/footer.html'"></div>

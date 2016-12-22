@@ -1,0 +1,186 @@
+body{
+    margin-top:30px;
+    font: 12px 'Microsoft YaHei';
+}
+a{
+    text-decoration: none;!important;
+}
+a:hover{
+    text-decoration: none;!important;
+}
+.start-main{
+    background:#E9E8E3;
+}
+
+/***header***/
+.header b{
+    display: inline-block;
+    height:30px;
+    width: 30px;
+    vertical-align: middle;
+}
+.welcome{
+    padding:0 10px;
+}
+.welcome span{
+    cursor: pointer;
+}
+.header .phone{
+    background: url("../images/index/top-icon.png") no-repeat -120px 0;
+}
+.header .wechat{
+    background: url("../images/index/top-icon.png") no-repeat 0 0;
+}
+.header .app{
+    background: url("../images/index/top-icon.png") no-repeat -60px 0;
+}
+.header .help{
+    background: url("../images/index/top-icon.png") no-repeat -30px 0;
+}
+.nav-top{
+    width:100%;
+    background:#262e38;
+    position: relative;
+    padding:30px 0 30px 0;
+}
+.nav-top li{
+    text-align: right;
+    padding:5px;
+}
+div.logo{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-70px;
+    margin-left:-145px;
+    z-index: 1;
+}
+.header p,.header h4,.header a{
+    color:#fff;
+}
+.header .stock{
+    color: #d7de89;
+    font-size: 16px;
+}
+.navbar-nav{
+    color:#9d9d9d;
+}
+
+/**main***/
+.start-main .banner{
+    width:100%;
+}
+a.left,a.right{
+    cursor: pointer;
+}
+.product_2 li{
+   padding: 0;
+}
+.info_1{
+    position: absolute;
+    top:60%;
+    left:22%;
+}
+.start-main .info_1_1{
+    padding:10px;
+    border: 2px solid #000000;
+    background: #fff;
+}
+.start-main p{
+    margin:0;
+    padding-bottom:5px;
+}
+.start-main p.info_1_2{
+    padding:5px 20px;
+    border-top: 1px solid #000000;
+}
+.cake_1,.cake_2,.cake_4{
+    padding:2em;
+}
+.cake_3,.cake_5,.cake_6{
+    padding:2em 0;
+}
+.index section img{
+	transition:all 0.5s linear;
+}
+.index section a{
+	overflow:hidden;
+	display:inline-block;
+}
+.index section img:hover{
+	transform:scale(1.1);
+	
+}
+.text-center h3{
+    margin:5px;
+}
+.cake_2{
+    background: #EBCDD5;
+}
+li.classicl{
+    border-right: 1px solid #000000;
+    padding-right: 1em;
+    margin-right: 1em;
+    vertical-align: middle;
+}
+.info_2,.info_3{
+    position: relative;
+}
+.info_2_1{
+    position: absolute;
+    width:100%;
+    top:65%;
+}
+.info_3_1{
+    position: absolute;
+    width:250px;
+    bottom:0;
+    background: #000000;
+    opacity: .8;
+}
+.cake_3{
+    background: #fff;
+}
+.cake_4{
+    background: #D1E1E0;
+}
+.cake_4_1{
+    background: #fff;
+    padding-top:10px;
+}
+.cake_5{
+    background: #fff;
+}
+.cake_5_1{
+    padding-top:10px;
+}
+.cake_6{
+    background: #D1E1E0;
+}
+.cake_6_1{
+    padding-top:10px;
+}
+
+
+/*****footer****/
+.footer{
+    width:100%;
+    padding:10px 0;
+    background: #1c2832;
+    font-size: 12px;
+}
+.footer p,.footer h4,.footer a,.footer span{
+    color:#fff;
+}
+
+/**toTop**/
+.toTop{
+    position: fixed;
+    bottom:5%;
+    right:2%;
+    width:30px;
+    line-height:30px;
+    background: #aaa;
+    cursor: pointer;
+    display: none;
+}

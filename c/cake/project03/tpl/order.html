@@ -1,0 +1,65 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+<!--主体-->
+<div class="main">
+    <div class="container">
+        <div class="c-top cmn">
+            <ul class="list-inline list-unstyled">
+                <li class="active"><span>1</span><i>CART</i><b>购物车</b></li>
+                <li class="active"><span>2</span><i>FILL IN ORDER</i><b>确认订单</b></li>
+                <li><span>3</span><i>SUCCESSFUL SUBMISSION</i><b>成功提交订单</b></li>
+            </ul>
+        </div>
+        <section class="order-main">
+            <h4>填写订单信息</h4>
+            <form>
+                <!--联系人-->
+                <div class="form-group">
+                    <label for="name">联系人</label>
+                    <input type="text" id="name" class="form-control" ng-model="order.rcvName"/>
+                </div>
+                <!--联系电话-->
+                <div class="form-group">
+                    <label for="phone">联系电话</label>
+                    <input type="text" id="phone" ng-model="order.phone" class="form-control"/>
+                </div>
+                <!--收货地址-->
+                <div class="form-group">
+                    <label for="address">收货地址</label>
+                <textarea id="address" ng-model="order.addr" class="form-control"></textarea>
+                </div>
+                <!--送货方式-->
+                <div class="form-group">
+                    <label>送货方式</label><br/>
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" ng-model="order.sendment" value="1"/>
+                            <img src="images/order/order_1.png" alt=""/>
+                        </label>
+                    </div>
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" ng-model="order.sendment" value="2"/>
+                            <img src="images/order/order_2.png" alt=""/>
+                        </label>
+                    </div>
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" ng-model="order.sendment" value="3"/>
+                            <img src="images/order/order_3.png" alt=""/>
+                        </label>
+                    </div>
+            </form>
+            <div class="c-ord">
+                <a href="#/product" class="go-buy">返回继续购物</a>
+                <a href class="submit" ng-click="submitOrder()">确认订单</a>
+            </div>
+                <!--<input type="button"-->
+                       <!--ng-click="submitOrder()"-->
+                       <!--class="btn btn-success btn-block" value="提交订单"/>-->
+
+        </section>
+    </div>
+</div>
+
+<div ng-include="'tpl/include/footer.html'"></div>

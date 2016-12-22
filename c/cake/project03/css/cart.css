@@ -1,0 +1,212 @@
+.c-main {
+  background: #fff;
+}
+.c-top {
+  margin-bottom: 50px;
+}
+.cart-main {
+  color: #333333;
+  font-family: 微软雅黑;
+}
+.cart-main h4 {
+  font: bolder 16px "微软雅黑";
+}
+.cart-main .cart-tb {
+  padding-bottom: 10px;
+  font: 12px "微软雅黑";
+}
+.cart-main .cart-tb .cart-nav li:first-child,
+.cart-main .cart-tb .cart-det li:first-child {
+  width: 36%;
+}
+.cart-main .cart-tb .cart-nav li,
+.cart-main .cart-tb .cart-det li {
+  width: 15%;
+}
+.cart-main .cart-tb .cart-nav {
+  background: #151e26;
+  color: #fff;
+  line-height: 29px;
+  font: bolder 15px/29px "微软雅黑";
+}
+.cart-main .cart-tb .cart-det {
+  padding: 10px 10px 40px;
+  line-height: 60px;
+}
+.cart-main .cart-tb .cart-det li:first-child {
+  float: left;
+  padding-left: 70px;
+}
+.cart-main .cart-tb .cart-det b.c-count {
+  padding: 0 14px 0 10px;
+  font-size: 14px;
+}
+.cart-main .cart-tb .cart-det .cart-img img {
+  width: 100px;
+  height: 60px;
+  float: left;
+}
+.cart-main .cart-tb .cart-list {
+  padding: 40px;
+  font-size: 18px;
+}
+.cart-main .cart-tb .cart-list a {
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.cart-main .cart-tb .cart-count {
+  background: #EFEFEF;
+  border-radius: 5px;
+  padding: 15px;
+  height: 59px;
+}
+.cart-main .cart-tb .cart-count li:first-child {
+  border-right: 1px dotted #333;
+  padding-right: 15px;
+}
+.cart-main .cart-tb .cart-count li {
+  width: 150px;
+  text-align: center;
+  font-size: 16px;
+}
+.cart-main .cart-tb .cart-count li a {
+  color: #333;
+}
+.cart-main .cart-tb .cart-count li:nth-child(2) ~ li {
+  float: right;
+}
+.cart-main .cart-tb .cart-count li:last-child {
+  line-height: 30px;
+  font-weight: 900;
+}
+.cart-main .cart-tb .cart-total {
+  background: #efefef;
+  padding: 20px;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+.cart-main .cart-tb .cart-total li {
+  text-align: right;
+  font-size: 16px;
+}
+.cart-main .cart-tb .cart-total li > span:last-child {
+  display: inline-block;
+  width: 100px;
+}
+.cart-main .cart-tb .cart-total li:not(last-child) b {
+  font-weight: 400;
+}
+.cart-main .cart-tb .cart-total li:last-child {
+  margin-top: 20px;
+}
+.cart-main .cart-tb .cart-total li:last-child span:last-child {
+  font-size: 24px;
+}
+.cart-main .cart-tb a.pay {
+  color: #fff;
+  background: #2A313B;
+}
+.cart-main .cart-tb .cart-other {
+  border-top: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 20px 0;
+  margin: 20px 0 70px;
+  font-size: 14px;
+}
+.cart-main .cart-tb .cart-other h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #151e26;
+  padding: 0;
+  margin: 10px 0 10px;
+}
+.cart-main .cart-tb .cart-other .ot-list > li {
+  margin-left: 30px;
+}
+.cart-main .cart-tb .cart-other .ot-list > li:first-child {
+  margin-left: 0;
+}
+.cart-main .cart-tb .cart-other p {
+  padding: 0;
+}
+.cart-main .cart-tb .cart-other li.right {
+  float: right;
+  margin-top: 5px;
+}
+.cart-main .cart-tb .cart-other a {
+  color: #333;
+  text-decoration: none;
+}
+.cart-main .cart-tb .cart-other a.add-cart {
+  display: inline-block;
+  color: #151e26;
+  font-size: 14px;
+  border: 2px solid #151e26;
+  border-radius: 5px;
+  padding: 4px 22px;
+}
+.cart-main .cart-tb .cart-other a.add-cart:hover {
+  background-color: #2A313B;
+  color: #fff;
+}
+.c-ord {
+  margin: 30px 0 30px;
+  text-align: right;
+}
+.c-ord a {
+  display: inline-block;
+  height: 38px;
+  background: #fff;
+  width: 179px;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px 10px;
+  color: #2A313B;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 1px solid #2A313B;
+}
+.order-main {
+  width: 70%;
+  margin: 0 auto 50px;
+}
+.order-main h4 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+.order-main a.submit {
+  color: #fff;
+  background: #2A313B;
+}
+h4.to-view {
+  margin-bottom: 100px;
+}
+.my-ord {
+  margin-top: 50px;
+  min-height: 300px;
+}
+.my-ord .my-order {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+.my-ord tbody tr:nth-child(odd) td,
+.my-ord tbody tr:nth-child(even) td:nth-child(1) {
+  text-align: left;
+}
+.my-ord tbody td img {
+  padding: 3px;
+  border: 1px solid #aaa;
+  width: 100px;
+  height: 60px;
+}
+.my-ord tbody tr:nth-child(odd) a {
+  margin-left: 50px;
+}
+.my-ord .noOrder {
+  widht: 100%;
+  margin: 50px 0 ;
+  font-size: 20px;
+}

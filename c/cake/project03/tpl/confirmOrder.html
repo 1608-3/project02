@@ -1,0 +1,18 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+<!--主体-->
+<div class="main">
+    <div class="container">
+        <div class="c-top cmn">
+            <ul class="list-inline list-unstyled">
+                <li class="active"><span>1</span><i>CART</i><b>购物车</b></li>
+                <li class="active"><span>2</span><i>FILL IN ORDER</i><b>确认订单</b></li>
+                <li class="active"><span>3</span><i>SUCCESSFUL SUBMISSION</i><b>成功提交订单</b></li>
+            </ul>
+        </div>
+        <h4>您已成功提交订单,订单号为：{{order_id}}</h4>
+        <h4 class="to-view">点击 <a href="#/myOrder">查看</a> 订单</h4>
+    </div>
+</div>
+
+<div ng-include="'tpl/include/footer.html'"></div>

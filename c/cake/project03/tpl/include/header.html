@@ -1,0 +1,87 @@
+<div class="header">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href class="navbar-brand"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="top-menu">
+                <ul class="nav navbar-nav left">
+                    <li><a href><b class="phone"></b> 400-627-5757</a></li>
+                    <!-- <li><a href>配送至:<span>深圳</span></a></li> -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href data-toggle="dropdown">关注微信<b class="wechat"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="wx">
+                                <img src="images/index/top-wx.gif" alt=""/>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>|</li>
+                    <li><a href>下载APP<b class="app"></b></a></li>
+                    <li>|</li>
+                    <li><a href>帮助中心<b class="help"></b></a></li>
+                    <li>|</li>
+                    <li><a href="#/login" ng-show="isLog">登录</a></li>
+                    <li ng-hide="isLog" class="welcome">
+                        <span data-toggle="dropdown">欢迎  {{uname}}<span class="caret"></span></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/myOrder">我的订单</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#/cart">我的购物车</a></li>
+                            <li class="divider"></li>
+                            <li><a href ng-click="quit()">退出登录</a></li>
+                        </ul>
+                    </li>
+                    <li ng-show="isLog">|</li>
+                    <li><a href="#/register" ng-show="isLog">注册</a></li>
+                    <!--<li><a href  ng-click="quit()">退出</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <ul class="list-unstyled list-inline">
+                        <li>
+                            <h4>HOME</h4>
+                            <a href="#/start">首页</a>
+                        </li>
+                        <li>
+                            <h4>CLASSICAL</h4>
+                            <a href="#/product">经典系列</a>
+                        </li>
+                        <li>
+                            <h4>PERFECTION</h4>
+                            <a href>极致系列</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <a href="#/start">
+                        <img src="images/index/logo.png" alt="" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class=" col-xs-offset-4 col-xs-4">
+                    <ul class="list-unstyled list-inline">
+                        <li>
+                            <h4>PROMOTION</h4>
+                            <a href>活动热点</a>
+                        </li>
+                        <li>
+                            <h4>EXCHANGE</h4>
+                            <a href>企业合作</a>
+                        </li>
+                        <li>
+                            <h4>BUSINESS</h4>
+                            <a href>业务合作</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
